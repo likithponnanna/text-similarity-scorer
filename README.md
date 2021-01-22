@@ -41,7 +41,7 @@ Listed below are different ways to build and run the system. There are a total o
     ```
 *   Create a virtual environment and activate it.
     ```console
-    foo@bar:~$ python3 -m venv 
+    foo@bar:~$ python3 -m venv venv 
     foo@bar:~$ source venv/bin/activate
     ```
 
