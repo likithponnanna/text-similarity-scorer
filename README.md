@@ -101,7 +101,7 @@ ___
 ## 2.  Pull from Docker Hub / Build Docker Image Locally.
 *   Pull image from docker hub.
     ```console
-    foo@bar:~$ docker pull likithponnanna/python-similarity
+    foo@bar:~$ docker pull likithponnanna/python-similarity:submission
     ```
 *   Run the image that was pulled. Below port 5000 is mapped between the external and docker container.
     ```console
