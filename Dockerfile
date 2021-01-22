@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt
 
 
 # Copy source code
-COPY /similarity .
+COPY  . /similarity
 
 # Application launch
 CMD ["python", "server.py"]
