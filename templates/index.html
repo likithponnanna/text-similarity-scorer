@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<div class="container">
+
+
+    <form action="/" method="POST">
+        <div class="row">
+          <div class="col mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Text Area 1</label>
+              <textarea type="orm-control" class="form-control" id="exampleFormControlInput1" rows="3" name="text_one"></textarea>
+            </div>
+            <div class="col mb-3">
+              <label for="exampleFormControlTextarea2" class="form-label">Text Area 2</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" name="text_two"></textarea>
+            </div>
+        </div>
+       
+          <button type="submit"  class="btn btn-primary mb-3 form-control" id="buttonsubmit" value="submit" >Process</button>
+      </form>
+
+
+</div>
+{% endblock %}

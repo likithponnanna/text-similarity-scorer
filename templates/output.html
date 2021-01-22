@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<div class="container">
+
+
+    <form action="/" method="GET"></form>
+        <div class="row">
+          <div class="col mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Text Area 1</label>
+              <textarea class="form-control"  id="exampleFormControlInput1" rows="3" name="text_one" readonly>{{text_one}}</textarea>
+            </div>
+            <div class="col mb-3">
+              <label for="exampleFormControlTextarea2" class="form-label">Text Area 2</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" name="text_two" readonly>{{text_two}}</textarea>
+            </div>
+        </div>
+
+        <div class="alert alert-success center-block" role="alert">
+            <p class="text-center"> Similarity Score is: 
+                     <strong>{{result}}</strong>  
+            </p>
+        </div> 
+
+
+        <div class="row">
+            <div class="col text-center">
+              <button onclick="goBack()"  class="btn btn-info " id="buttonsubmit" >Retry ?</button>
+            </div>
+          </div>
+       
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+
+
+
+
+
+</div>
+{% endblock %}
